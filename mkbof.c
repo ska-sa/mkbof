@@ -15,10 +15,12 @@
 #include <byteswap.h>
 
 
+#if 0 
 #define htobe32(p) bswap_32(p)
 #define htobe16(p) bswap_16(p)
 #define htole32(p) (p)
 #define htole16(p) (p)
+#endif
 
 #include "mkbofdef.h"
 

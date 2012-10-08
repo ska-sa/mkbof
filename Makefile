@@ -1,3 +1,3 @@
 
 mkbof: mkbof.c
-	gcc -Wall -o $@ $^  -I.
+	gcc -static -Wall -o $@ $^  -I.
