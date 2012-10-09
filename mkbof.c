@@ -338,8 +338,8 @@ int ReadSymbolFile()
   /* this is where PERL excel... */
   while (fgets(block, BLOCK_SIZE, fsym)) {
     /* NOTE: Just in case there is a line accidently in the core_info.tab file*/
-    /* DOS formatted newline*/
-    if(block[0] == '\r' && block[1] == '\n'){
+    /* DOS formatted newline OR newline*/
+    if((block[0] == '\r' && block[1] == '\n') || block[0] == '\n'){
         continue;
     }
     len = strlen(block);
